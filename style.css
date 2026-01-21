@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to left, #4b79a1, #283e51);
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+h1 {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  cursor: default;
+}
+
+h1 .keyWord {
+  font-size: 2.5rem;
+  color: #249e94;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.formDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.passForm .formDetails .inputDetails {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.passForm .formDetails .inputDetails .copyButton {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgb(223, 223, 223);
+}
+.passForm .formDetails .inputDetails .copyButton:hover {
+  background-color: #0c7970;
+}
+.passForm .formDetails .inputDetails .copyButton:active {
+  background-color: #0c77798d;
+}
+.passForm .formDetails .inputDetails input {
+  padding: 20px 60px 20px 60px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+
+.passForm .formDetails button {
+  padding: 10px 20px 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #249e94;
+  color: whitesmoke;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.passForm .formDetails button:hover {
+  background-color: #0c7779;
+  color: rgba(245, 245, 245, 0.582);
+}
+
+.passForm .formDetails button:active {
+  background-color: #0c797087;
+}
+.passForm .formDetails img {
+  width: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: auto;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h1 .keyWord {
+    font-size: 1.8rem;
+    text-underline-offset: 6px;
+  }
+
+  .passForm .formDetails .inputDetails input {
+    padding: 15px 50px 15px 15px;
+  }
+
+  .passForm .formDetails .inputDetails .copyButton {
+    width: 18px;
+    height: 18px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .passForm .formDetails button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .container {
+    width: 95%;
+    flex-direction: row;
+    height: auto;
+    gap: 15px;
+  }
+
+  .passForm .formDetails {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .passForm .formDetails .inputDetails {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1 .keyWord {
+    font-size: 2rem;
+  }
+
+  .passForm .formDetails button {
+    width: 45%;
+    font-size: 1rem;
+  }
+}
